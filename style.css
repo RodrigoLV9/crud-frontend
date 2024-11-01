@@ -7,6 +7,9 @@
 }
 html, body{
     background-color: aliceblue;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
 }
 /* HEADER */
 .header{
@@ -44,6 +47,7 @@ html, body{
     height: 30px;
     padding:3px;
     background-color: rgb(0,73, 231);
+    border:none;
     border-radius:3px;
     font-weight: bolder;
     text-align: center;
@@ -51,6 +55,9 @@ html, body{
 }
 
 /* HERO */
+.hero{
+    height: 200px;
+}
 .title{
     text-align: center;
     font-size: 50px
@@ -61,7 +68,6 @@ html, body{
     justify-content: space-evenly;
     width: 700px;
     height: 100px;
-
     margin:10px auto;
 
 }
@@ -73,6 +79,54 @@ html, body{
 }
 
 /* MAIN  */
+/* .main{
+    flex:1
+} */
+.create{
+    width:800px;
+    margin:15px auto;
+    text-align: center;
+    
+}
+.create__input{
+    width:400px;
+    height: 35px;
+    padding: 5px;
+    outline: none;
+    border:1px solid black;
+}
+.create__button{
+    width:100px;
+    height: 30px;
+}
+
+.list{
+    height: auto;
+    width:700px;
+    margin:20px auto;
+    padding:15px;
+    
+}
+.list__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+.list__item-info{
+    font-size: .9rem;
+    padding:10px;
+    height: 60px;
+    overflow-y: auto;
+}
+.list__item-button{
+    width:100px;
+    height: 30px;
+    margin:5px
+}
+.containerButtons{
+    
+}
 
 /* FOOTER */
 footer{
