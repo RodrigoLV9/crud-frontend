@@ -11,6 +11,15 @@ html, body{
     grid-template-rows: auto auto 1fr auto;
     min-height: 100vh;
 }
+button{
+    cursor: pointer;
+    transition: filter .3s;
+    border: none;
+    border-radius:2px;
+}
+button:hover{
+    filter: brightness(.9);
+}
 /* HEADER */
 .header{
     height: 50px;
@@ -79,9 +88,7 @@ html, body{
 }
 
 /* MAIN  */
-/* .main{
-    flex:1
-} */
+
 .create{
     width:800px;
     margin:15px auto;
@@ -89,15 +96,18 @@ html, body{
     
 }
 .create__input{
-    width:400px;
+    width:500px;
     height: 35px;
     padding: 5px;
     outline: none;
     border:1px solid black;
 }
-.create__button{
+.button-create{
     width:100px;
     height: 30px;
+    background-color: rgb(50, 156, 50);
+    color:rgb(226, 225, 225);
+    font-weight: bolder;
 }
 
 .list{
@@ -111,7 +121,8 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    
+    box-shadow: 1px 1px 3px 1px rgb(214, 214, 214),-1px -1px 3px 1px rgb(214, 214, 214);
 }
 .list__item-info{
     font-size: .9rem;
@@ -122,10 +133,18 @@ html, body{
 .list__item-button{
     width:100px;
     height: 30px;
-    margin:5px
+    margin:5px;
+    color:rgb(226, 225, 225);
+    font-weight: bolder;
 }
 .containerButtons{
     
+}
+.button-edit{
+    background-color: rgb(44, 119, 231);
+}
+.button-delete{
+    background-color: rgb(206, 55, 35);
 }
 
 /* FOOTER */
